@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F59390">
+
+    <TextView
+        android:id="@+id/tvEndereco"
+        android:layout_width="321dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:background = "@drawable/custom_input"
+        android:text="Rua XXXXX"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPesq" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="168dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="278dp"
+        android:text="Segundo sabor:"
+        android:textSize="20dp"
+        android:background = "@drawable/custom_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Spinner
+        android:id="@+id/sabor1"
+        android:layout_width="313dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible"
+        android:background="#F7DCDB"/>
+
+    <Spinner
+        android:id="@+id/sabor2"
+        android:layout_width="313dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#F7DCDB"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="168dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="278dp"
+        android:text="Primeiro sabor: "
+        android:textSize="20dp"
+        android:background = "@drawable/custom_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="10dp"
+        android:text="Adicionar ao pedido"
+        android:padding="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sabor1"
+        android:background="#D9A404"/>
+
+    <Button
+        android:id="@+id/btnFim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="18dp"
+        android:text="Finalizar Pedido"
+        android:padding="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd"
+        android:background="#D9A404"/>
+
+    <TextView
+        android:id="@+id/tvPreco"
+        android:layout_width="127dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="14dp"
+        android:text="R$ 0,00"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/btnAdd"
+        app:layout_constraintTop_toBottomOf="@+id/sabor1"
+        android:background = "@drawable/custom_input"/>
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Nome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFim"
+        android:background = "@drawable/custom_input"/>
+
+    <Button
+        android:id="@+id/btnPesq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="44dp"
+        android:text="Pesquisar"
+        android:padding="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edtNome"
+        app:layout_constraintTop_toBottomOf="@+id/tvPreco"
+        android:background="#D9A404"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

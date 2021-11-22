@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D3B3F2">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="277dp"
+            android:background="#49454D"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/comfortaa"
+                android:text="Cadastro\nde clientre"
+                android:textAlignment="center"
+                android:textColor="#D3B3F2"
+                android:textFontWeight="1000"
+                android:textSize="28sp"></TextView>
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#D3B3F2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/nome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="12dp"
+                    android:fontFamily="@font/comfortaa"
+                    android:padding="2dp"
+                    android:shadowColor="#160F1A"
+                    android:shadowDx="-3"
+                    android:shadowDy="3"
+                    android:shadowRadius="4"
+                    android:text="Nome"
+                    android:textAlignment="center"
+                    android:textColor="#f7dcdb"
+                    android:textFontWeight="700"
+                    android:textSize="27sp" />
+
+                <EditText
+                    android:id="@+id/edtNome"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/custom_input"
+                    android:fontFamily="@font/comfortaa"
+                    android:hint="nickname"
+                    android:padding="2dp"
+                    android:textColor="#160F1A"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/comfortaa"
+                    android:padding="2dp"
+                    android:shadowColor="#160F1A"
+                    android:shadowDx="-3"
+                    android:shadowDy="3"
+                    android:shadowRadius="4"
+                    android:text="Telefone"
+                    android:textAlignment="center"
+                    android:textColor="#f7dcdb"
+                    android:textFontWeight="700"
+                    android:textSize="27sp" />
+
+                <EditText
+                    android:id="@+id/edtTele"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/custom_input"
+                    android:digits="0123456789+"
+                    android:fontFamily="@font/comfortaa"
+                    android:hint="número"
+                    android:inputType="phone"
+                    android:padding="2dp"
+                    android:textColor="#160F1A"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/endereco"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/comfortaa"
+                android:padding="2dp"
+                android:shadowColor="#f7dcdb"
+                android:shadowDx="-3"
+                android:shadowDy="3"
+                android:shadowRadius="4"
+                android:text="Endereço"
+                android:textAlignment="center"
+                android:textColor="#160F1A"
+                android:textFontWeight="700"
+                android:textSize="27sp" />
+
+            <EditText
+                android:id="@+id/edtEndereco"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/custom_input"
+                android:fontFamily="@font/comfortaa"
+                android:hint="onde mora?"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:padding="2dp"
+                android:textColor="#160F1A"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" />
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="#49454D" />
+
+            <Button
+                android:id="@+id/btnCadastrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#49454D"
+                android:fontFamily="@font/comfortaa"
+                android:padding="10dp"
+                android:text="Cadastrar"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#D3B3F2"
+                android:textSize="32sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
